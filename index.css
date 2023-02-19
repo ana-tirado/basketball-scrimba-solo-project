@@ -1,0 +1,202 @@
+/* COLORS 
+background: #faa920, #a34802 
+titles: #fac22f
+screens: #d9042a 
+
+FONTS
+font-family: timer;
+font-family: 'Graduate', cursive; */
+
+@font-face {
+    src: url("timer.ttf");
+    font-family: timer;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(#faa920, #a34802);
+    padding: 20px;
+    border-radius: 20px;
+    width: 600px;
+    height: 315px;
+    margin: 20px auto;
+    font-family: 'Graduate', cursive;
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    border: 5px solid white;
+    border-radius: 40px;
+    padding: 3px 20px;
+    margin: 30px auto 10px;
+    box-shadow: 4px 4px 4px #783501;
+    background-color: #fac22f;
+}
+
+#home-points-text, #guest-points-text {
+    font-family: timer;
+    font-size: 60px;
+    border: 5px solid white;
+    border-radius: 40px;
+    margin-top: 0px;
+    width: 120px;
+    height: 57px;
+    margin: auto;
+    text-align: center;
+    padding: 0 5px;
+    background-color: black;
+    color: #d9042a;
+    box-shadow: 4px 4px 4px #783501;     
+}
+
+.home-points-btn, .guest-points-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+#home-points-btn-1, #guest-points-btn-1 {
+    background-color: #fac22f;
+    border: 3px solid white;
+    border-radius: 10px 0px 0px 10px;
+    font-family: 'Graduate', cursive;
+    box-shadow: 7px 4px 3px #783501;
+}
+
+#home-points-btn-2, #guest-points-btn-2 {
+    background-color: #fac22f;
+    border: 3px solid white;
+    font-family: 'Graduate', cursive;
+    box-shadow: 6px 4px 3px #783501;
+}
+
+#home-points-btn-3, #guest-points-btn-3 {
+    background-color: #fac22f;
+    border: 3px solid white;
+    border-radius: 0px 10px 10px 0px;
+    font-family: 'Graduate', cursive;
+}
+
+.home-fouls, .guest-fouls {
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
+}
+
+#home-fouls-text {
+    height: 30px;
+    margin-top: 10px;
+    border: 5px solid white;
+    border-radius: 0 40px 40px 0;
+    padding: 3px 15px;
+    background-color: black;
+    color: #d9042a;
+    font-family: timer;
+    font-size: 30px;
+    width: 40px;
+    box-shadow: 4px 4px 4px #783501;
+    font-family: timer;
+}
+
+#home-fouls-btn {
+    border: 5px solid white;
+    height: 46px;
+    border-radius: 40px 0px 0px 40px;
+    font-size: 25px;
+    padding: 3px 15px;
+    margin-top: 10px;
+    background-color: #fac22f;
+    font-family: 'Graduate', cursive;
+    box-shadow: 6px 4px 3px #783501;
+}
+
+.guest {
+    text-align: center;
+}
+
+#guest-fouls-text {
+    height: 30px;
+    margin-top: 10px;
+    border: 5px solid white;
+    border-radius: 40px 0 0 40px;
+    padding: 3px 15px;
+    background-color: black;
+    color: #d9042a;
+    font-family: timer;
+    font-size: 30px;
+    box-shadow: 4px 4px 4px #783501;
+    width: 40px;
+    box-shadow: 6px 4px 3px #783501;
+}
+
+#guest-fouls-btn {
+    border: 5px solid white;
+    height: 46px;
+    border-radius: 0 40px 40px 0;
+    font-size: 25px;
+    padding: 3px 15px;
+    margin-top: 10px;
+    background-color: #fac22f;
+    font-family: 'Graduate', cursive;
+}
+
+.middle-part {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+#period-btn {
+    font-size: 25px;
+    border: 5px solid white;
+    border-radius: 40px;
+    padding: 3px 20px;
+    margin: 90px auto 10px;
+    background-color: #fac22f;
+    font-family: 'Graduate', cursive;
+}
+
+#period-text {
+    font-family: timer;
+    font-size: 30px;
+    border: 5px solid white;
+    border-radius: 40px;
+    margin: 0px auto 20px;
+    width: 30px;
+    height: 30px;
+    padding: 3px 15px;
+    background-color: black;
+    color: #d9042a;
+    box-shadow: 4px 4px 4px #783501;
+}
+
+#new-game-btn {
+    border: 5px solid white;
+    border-radius: 40px;
+    margin: 34px auto 20px;
+    width: 140px;
+    height: 40px;
+    padding: 3px 15px;
+    background-color: #fac22f;
+    font-family: 'Graduate', cursive;
+    font-size: 17px;
+}
+
+/* BUTTONS ANIMATION */
+
+button {
+    box-shadow: 4px 4px 4px #783501;
+}
+
+button:active {
+    transform: translateX(2px) translateY(2px);
+    box-shadow: none !important;
+}
+
